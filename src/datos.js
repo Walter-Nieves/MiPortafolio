@@ -43,31 +43,31 @@ export const datos = {
     profesion: "Desarrollador web Front-end",
     resumen:
       "Soy un desarrollador Front-End con experiencia en tecnologías como React y Tailwind CSS. Me encuentro ampliando mis conocimientos en el área de Back-End, lo que me permite avanzar hacia un perfil Full Stack. Me caracterizo por ser proactivo, con gran interés en el aprendizaje continuo y en la creación de interfaces modernas, funcionales y accesibles. Tengo habilidades para trabajar en equipo y adaptarme a nuevos entornos y desafíos tecnológicos.",
-    foto: "public/imagenes/mifoto.jpg",
+    foto: "/MiPortafolio/imagenes/mifoto.jpg",
     boton1: "Descarga HdV",
     boton2: "Contacto",
     redes: [
       {
         nombre: "LinkedIn",
         enlace: "httos://www.linkedin.com/in/wnieves/",
-        icono: "public/imagenes/linkedin.svg",
+        icono: "/MiPortafolio/imagenes/linkedin.svg",
       },
       {
         nombre: "Instagram",
         enlace: "https://www.instagram.com/waln51?igsh=MThtMzcwZXN5NnpiaA==",
-        icono: "public/imagenes/instagram.svg",
+        icono: "/MiPortafolio/imagenes/instagram.svg",
       },
       {
         nombre: "GitHub",
         enlace: "https://github.com/Walter-Nieves",
-        icono: "public/imagenes/github.svg",
+        icono: "/MiPortafolio/imagenes/github.svg",
       },
     ],
   },
   acerca: {
     nombre:"Walter Nieves",
     titulo: "Sobre mí",
-    foto: "public/imagenes/recap.gif",
+    foto: "/MiPortafolio/imagenes/recap.gif",
     parrafos: [
       "Mi enfoque como desarrollador no solo se centra en el código, sino también en entender las necesidades del usuario final para construir soluciones que aporten valor real. Me esfuerzo por escribir código limpio, reutilizable y bien estructurado, y disfruto colaborar con equipos multidisciplinarios en proyectos que requieren creatividad, lógica y atención al detalle. Me adapto con facilidad a nuevas herramientas y metodologías, lo que me ha permitido integrarme rápidamente en distintos entornos de desarrollo.",
       "Actualmente estoy enfocado en fortalecer mis conocimientos en Back-End para convertirme en un desarrollador Full Stack. Esta meta refleja mi compromiso con el crecimiento profesional y mi deseo de contribuir en todas las etapas del desarrollo de software. A mediano plazo, aspiro a participar en proyectos innovadores que me permitan mejorar mis habilidades, crecer junto a otros profesionales y aportar con responsabilidad y pasión a los objetivos de cada equipo o empresa.",
@@ -78,35 +78,35 @@ export const datos = {
     habilidades: [
       {
         nombre: "HTML",
-        icono: "public/imagenes/icon-html.png",
+        icono: "/MiPortafolio/imagenes/icon-html.png",
       },
       {
         nombre: "CSS",
-        icono: "public/imagenes/icon-css.png",
+        icono: "/MiPortafolio/imagenes/icon-css.png",
       },
       {
         nombre: "JavaScript",
-        icono: "public/imagenes/icon-js.png",
+        icono: "/MiPortafolio/imagenes/icon-js.png",
       },
       {
         nombre: "Tailwind",
-        icono: "public/imagenes/icon-tailwind.png",
+        icono: "/MiPortafolio/imagenes/icon-tailwind.png",
       },
       {
         nombre: "React",
-        icono: "public/imagenes/React-icon.svg.png",
+        icono: "/MiPortafolio/imagenes/React-icon.svg.png",
       },
       {
         nombre: "NodeJs",
-        icono: "public/imagenes/Node.js.png",
+        icono: "/MiPortafolio/imagenes/Node.js.png",
       },
       {
         nombre: "Git",
-        icono: "public/imagenes/icon-git.png",
+        icono: "/MiPortafolio/imagenes/icon-git.png",
       },
       {
         nombre: "Express Js",
-        icono: "public/imagenes/express.svg",
+        icono: "/MiPortafolio/imagenes/express.svg",
       },
     ],
   },
@@ -115,43 +115,43 @@ export const datos = {
     formacion: [
       {
         nombre: "Bachiller academico",
-        foto: "public/imagenes/ColegioAmericano.jpeg",
+        foto: "/MiPortafolio/imagenes/ColegioAmericano.jpeg",
         año: "1996",
         finalizado: "Finalizado en:",
       },
       {
         nombre: "Ingles basico conversacional",
-        foto: "public/imagenes/InstitutoMeyer.png",
+        foto: "/MiPortafolio/imagenes/InstitutoMeyer.png",
         año: "1999",
         finalizado: "Finalizado en:",
       },
       {
         nombre: "Administrador tecnico en sistemas",
-        foto: "public/imagenes/Cajacopi.png",
+        foto: "/MiPortafolio/imagenes/Cajacopi.png",
         año: "1999",
         finalizado: "Finalizado en:",
       },
       {
         nombre: "Administrador de empresas",
-        foto: "public/imagenes/UNAD.jpg",
+        foto: "/MiPortafolio/imagenes/UNAD.jpg",
         año: "2014",
         finalizado: "Finalizado en:",
       },
       {
         nombre: "Desarrollador Web Front-end",
-        foto: "public/steam.png",
+        foto: "/MiPortafolio/steam.png",
         año: "2025",
         finalizado: "Finalizado en:",
       },
       {
         nombre: "Desarrollador Web Back-end",
-        foto: "public/steam.png",
+        foto: "/MiPortafolio/steam.png",
         año: "Curso",
         finalizado: "Finalizado en:",
       },
       {
         nombre: "Ingles avanzado",
-        foto: "public/imagenes/Berlitz.png",
+        foto: "/MiPortafolio/imagenes/Berlitz.png",
         año: "2025",
         finalizado: "Finalizado en:",
       },
@@ -164,7 +164,7 @@ export const datos = {
         nombre: "Simulacion pagina Trello",
         descripcion:
           "Proyecto donde tenemos logica de programacion y algunos efectos de animacion.",
-        foto: "public/imagenes/trello.webp",
+        foto: "/MiPortafolio/imagenes/trello.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -172,7 +172,7 @@ export const datos = {
         nombre: "Bebidas refrescantes",
         descripcion:
           "La idea es practicar algunos efectos de animacion en css y logica con JavaScript.",
-        foto: "public/imagenes/bebidas.webp",
+        foto: "/MiPortafolio/imagenes/bebidas.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -180,7 +180,7 @@ export const datos = {
         nombre: "Caja de comentarios",
         descripcion:
           "Simular la experiencia que tienen los usuarios al interactuar en las diferentes plataformas.",
-        foto: "public/imagenes/cajadecomentarios.webp",
+        foto: "/MiPortafolio/imagenes/cajadecomentarios.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -188,7 +188,7 @@ export const datos = {
         nombre: "Amigo secreto",
         descripcion:
           "Crear una lista de amigos y al azar se escoge el amigo secreto, estupendo para amor y amistad.",
-        foto: "public/imagenes/amigosecreto.webp",
+        foto: "/MiPortafolio/imagenes/amigosecreto.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -196,7 +196,7 @@ export const datos = {
         nombre: "Numero secreto",
         descripcion:
           "Juego sencillo de adivinar un numero al azar entre 1 y 100",
-        foto: "public/imagenes/numerosecreto.webp",
+        foto: "/MiPortafolio/imagenes/numerosecreto.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -204,7 +204,7 @@ export const datos = {
         nombre: "Tienda de React",
         descripcion:
           "Aplicacion para crear una lista de articulos por pedido utilizando una API",
-        foto: "public/imagenes/Tienda.webp",
+        foto: "/MiPortafolio/imagenes/Tienda.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -212,7 +212,7 @@ export const datos = {
         nombre: "Juego del ahorcado",
         descripcion:
           "Juego realizado en su totalidad utilizando las herramientas que brinda React.",
-        foto: "public/imagenes/ahorcado.webp",
+        foto: "/MiPortafolio/imagenes/ahorcado.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -220,7 +220,7 @@ export const datos = {
         nombre: "Tasklist",
         descripcion:
           "Aplicativo full stack para modificar tareas. Guardando la informacion en MongoDB ",
-        foto: "public/imagenes/Tasklist.PNG",
+        foto: "/MiPortafolio/imagenes/Tasklist.PNG",
         demonstracion:"https://walter-nieves.github.io/Tasklist-front/" ,
         repositorio:"https://github.com/Walter-Nieves/Tasklist-front",
       },
@@ -228,7 +228,7 @@ export const datos = {
         nombre: "Mi portafolio",
         descripcion:
           "Poder mostrar lo que me gusta hacer y me apasiona en este proyecto que me apasionó bastante",
-        foto: "public/imagenes/miportafolio.webp",
+        foto: "/MiPortafolio/imagenes/miportafolio.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -298,31 +298,31 @@ export const datos2 = {
     profesion: "Front-end web developer",
     resumen:
       "I'm a front-end developer with experience in technologies such as React and Tailwind CSS. I'm expanding my knowledge in the back-end space, which allows me to move toward a full-stack profile. I'm characterized by being proactive, with a keen interest in continuous learning and creating modern, functional, and accessible interfaces. I have the skills to work in a team and adapt to new environments and technological challenges.",
-    foto: "public/imagenes/mifoto.jpg",
+    foto: "/MiPortafolio/imagenes/mifoto.jpg",
     boton1: "Download CV",
     boton2: "Contact",
     redes: [
       {
         nombre: "LinkedIn",
         enlace: "httos://www.linkedin.com/in/wnieves/",
-        icono: "public/imagenes/linkedin.svg",
+        icono: "/MiPortafolio/imagenes/linkedin.svg",
       },
       {
         nombre: "Instagram",
         enlace: "https://www.instagram.com/waln51?igsh=MThtMzcwZXN5NnpiaA==",
-        icono: "public/imagenes/instagram.svg",
+        icono: "/MiPortafolio/imagenes/instagram.svg",
       },
       {
         nombre: "GitHub",
         enlace: "https://github.com/Walter-Nieves",
-        icono: "public/imagenes/github.svg",
+        icono: "/MiPortafolio/imagenes/github.svg",
       },
     ],
   },
   acerca: {
      nombre:"Walter Nieves",
     titulo: "About me",
-    foto: "public/imagenes/recap.gif",
+    foto: "/MiPortafolio/imagenes/recap.gif",
     parrafos: [
       "My approach as a developer is not only focused on writing code, but also on understanding the needs of the end user to build solutions that deliver real value. I strive to write clean, reusable, and well-structured code, and I enjoy collaborating with multidisciplinary teams on projects that require creativity, logic, and attention to detail. I quickly adapt to new tools and methodologies, which has allowed me to integrate smoothly into various development environments.",
       "I am currently focused on strengthening my Back-End skills to become a Full Stack developer. This goal reflects my commitment to professional growth and my desire to contribute at every stage of the software development process. In the medium term, I aim to take part in innovative projects that will help me enhance my skills, grow alongside other professionals, and contribute with responsibility and passion to the goals of each team or company.",
@@ -333,35 +333,35 @@ export const datos2 = {
     habilidades: [
       {
         nombre: "HTML",
-        icono: "public/imagenes/icon-html.png",
+        icono: "/MiPortafolio/imagenes/icon-html.png",
       },
       {
         nombre: "CSS",
-        icono: "public/imagenes/icon-css.png",
+        icono: "/MiPortafolio/imagenes/icon-css.png",
       },
       {
         nombre: "JavaScript",
-        icono: "public/imagenes/icon-js.png",
+        icono: "/MiPortafolio/imagenes/icon-js.png",
       },
       {
         nombre: "Tailwind",
-        icono: "public/imagenes/icon-tailwind.png",
+        icono: "/MiPortafolio/imagenes/icon-tailwind.png",
       },
       {
         nombre: "React",
-        icono: "public/imagenes/React-icon.svg.png",
+        icono: "/MiPortafolio/imagenes/React-icon.svg.png",
       },
       {
         nombre: "NodeJs",
-        icono: "public/imagenes/Node.js.png",
+        icono: "/MiPortafolio/imagenes/Node.js.png",
       },
       {
         nombre: "Git",
-        icono: "public/imagenes/icon-git.png",
+        icono: "/MiPortafolio/imagenes/icon-git.png",
       },
       {
         nombre: "Express Js",
-        icono: "public/imagenes/express.svg",
+        icono: "/MiPortafolio/imagenes/express.svg",
       },
     ],
   },
@@ -370,43 +370,43 @@ export const datos2 = {
     formacion: [
       {
         nombre: "Academic bachelor",
-        foto: "public/imagenes/ColegioAmericano.jpeg",
+        foto: "/MiPortafolio/imagenes/ColegioAmericano.jpeg",
         año: "1996",
         finalizado: "Completed in:",
       },
       {
         nombre: "Basic conversational English",
-        foto: "public/imagenes/InstitutoMeyer.png",
+        foto: "/MiPortafolio/imagenes/InstitutoMeyer.png",
         año: "1999",
         finalizado: "Completed in:",
       },
       {
         nombre: "Technical Systems Administrator",
-        foto: "public/imagenes/Cajacopi.png",
+        foto: "/MiPortafolio/imagenes/Cajacopi.png",
         año: "1999",
         finalizado: "Completed in:",
       },
       {
         nombre: "Business Administrator",
-        foto: "public/imagenes/UNAD.jpg",
+        foto: "/MiPortafolio/imagenes/UNAD.jpg",
         año: "2014",
         finalizado: "Completed in:",
       },
       {
         nombre: "Front-end Web Developer",
-        foto: "public/steam.png",
+        foto: "/MiPortafolio/steam.png",
         año: "2025",
         finalizado: "Completed in:",
       },
       {
         nombre: "Back-end Web Developer",
-        foto: "public/steam.png",
+        foto: "/MiPortafolio/steam.png",
         año: "In progress",
         finalizado: "Completed in:",
       },
       {
         nombre: "Advanced english",
-        foto: "public/imagenes/Berlitz.png",
+        foto: "/MiPortafolio/imagenes/Berlitz.png",
         año: "2025",
         finalizado: "Completed in:",
       },
@@ -419,7 +419,7 @@ export const datos2 = {
         nombre: "Trello page simulation",
         descripcion:
           "Project where we have programming logic and some animation effects.",
-        foto: "public/imagenes/trello.webp",
+        foto: "/MiPortafolio/imagenes/trello.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -427,7 +427,7 @@ export const datos2 = {
         nombre: "Refreshing drinks",
         descripcion:
           "The idea is to practice some animation effects in CSS and logic with JavaScript.",
-        foto: "public/imagenes/bebidas.webp",
+        foto: "/MiPortafolio/imagenes/bebidas.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -435,7 +435,7 @@ export const datos2 = {
         nombre: "Comment box",
         descripcion:
           "Simulate the experience that users have when interacting on different platforms.",
-        foto: "public/imagenes/cajadecomentarios.webp",
+        foto: "/MiPortafolio/imagenes/cajadecomentarios.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -443,14 +443,14 @@ export const datos2 = {
         nombre: "secret friend",
         descripcion:
           "Create a friends list and randomly choose your secret friend, great for love and friendship..",
-        foto: "public/imagenes/amigosecreto.webp",
+        foto: "/MiPortafolio/imagenes/amigosecreto.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
       {
         nombre: "Secret number",
         descripcion: "Simple game to guess a random number between 1 and 100",
-        foto: "public/imagenes/numerosecreto.webp",
+        foto: "/MiPortafolio/imagenes/numerosecreto.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -458,14 +458,14 @@ export const datos2 = {
         nombre: "React Store",
         descripcion:
           "Application to create a list of items per order using an API",
-        foto: "public/imagenes/Tienda.webp",
+        foto: "/MiPortafolio/imagenes/Tienda.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
       {
         nombre: "Hangman game",
         descripcion: "Game made entirely using the tools provided by React.",
-        foto: "public/imagenes/ahorcado.webp",
+        foto: "/MiPortafolio/imagenes/ahorcado.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
@@ -473,7 +473,7 @@ export const datos2 = {
         nombre: "My portfolio",
         descripcion:
           "Being able to show what I like to do and what I am passionate about in this project that I was quite passionate about.",
-        foto: "public/imagenes/miportafolio.webp",
+        foto: "/MiPortafolio/imagenes/miportafolio.webp",
         demonstracion: "Demo",
         repositorio: "Repo",
       },
