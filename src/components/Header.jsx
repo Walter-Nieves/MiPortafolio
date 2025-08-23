@@ -5,7 +5,8 @@ import { AnimationContext } from "../Contexts/AnimationContexts.jsx";
 // import { datos } from "../datos.js";
 import SocialItem from "./SocialItem.jsx";
 import { LanguageContext } from "../Contexts/LanguageContexts.jsx";
-
+import logowna from "/MiPortafolio/imagenes/wna11.webp"
+import hamburguesa from "/MiPortafolio/imagenes/hamburguesa.svg"
 
 function Header() {
   const navegarA = useNavigate();
@@ -36,7 +37,7 @@ function Header() {
   return (
     <header className="header">
       <div className="idioma">
-          <img src="public/imagenes/wna11.webp" alt="Logo"/>
+          <img src={logowna} alt="Logo"/>
         <div className="tiene-idiomas">
           <ul className="btn-idioma" onClick={() => setIdiomaAbierto(!idiomaAbierto)}>
            {contenido.lenguaje.boton1}
@@ -52,7 +53,7 @@ function Header() {
       </div>
  
       <div className="hamburguesa-nav">
-        <img className="Menu" src="public/imagenes/hamburguesa.svg" alt="" onClick={()=>setMenuAbierto(!menuAbierto)} />
+        <img className="Menu" src={hamburguesa} alt="" onClick={()=>setMenuAbierto(!menuAbierto)} />
         <nav className={menuAbierto ? "abierto" : ""}>
           <ul className="ul">
             {contenido.encabezado.enlace.map((red, index) => {
