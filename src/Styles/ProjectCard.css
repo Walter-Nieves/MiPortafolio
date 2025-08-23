@@ -1,0 +1,85 @@
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    border-radius: 1rem;
+    gap: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    aspect-ratio: 9/16;
+    overflow: hidden;
+  
+    transition: transform .3s ease,border .3s ease;
+
+}
+.projectCard:hover{
+    transform: scale(1.03);
+    outline: 1px solid var(--primary);
+}
+.projectCard img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+   
+    /* background-color: red;
+    padding: 10px; */
+    height: 100%;
+}
+
+.projectCard strong{
+    text-align: center;
+    color: var(--primary);
+    padding: 0rem 1rem;
+}
+
+
+.projectCard p{
+    font-size: .8rem;
+      padding: 0rem 1rem;
+      color: white;
+
+
+}
+.projectCard .btn-separator{
+    display: flex;
+    padding: 0.5rem;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+.projectCard button{
+    width: 8rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    color: white;
+
+}
+.projectCard button:nth-child(even){
+    background-color: var(--primary);
+}
+.projectCard a{
+    text-decoration: none;
+    color: white;
+
+}
+.projectCard button:nth-child(even) a{
+    background-color: var(--primary);
+    color: black;
+}
+
+
+@media screen and (max-width:360px) {
+    .TrainCard img{
+        width:100%;
+        max-width: 110px;
+        min-width: 100px;
+    }
+    
+}

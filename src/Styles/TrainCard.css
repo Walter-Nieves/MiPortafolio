@@ -1,0 +1,45 @@
+.TrainCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    width: 10rem;
+    min-height: 20rem;
+    transition: transform .3s ease,border .3s ease;
+
+}
+.TrainCard:hover{
+    transform: scale(1.1);
+    border: 1px solid var(--primary);
+}
+.TrainCard img{
+    width: 100%;
+    min-width: 120px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.TrainCard strong{
+    text-align: center;
+    color: var(--primary);
+}
+.TrainCard span{
+    color: white;
+}
+.TrainCard p{
+    text-align: center;
+
+}
+
+@media screen and (max-width:360px) {
+    .TrainCard img{
+        width:100%;
+        max-width: 110px;
+        min-width: 100px;
+    }
+    
+}

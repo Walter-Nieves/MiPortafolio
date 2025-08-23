@@ -1,6 +1,32 @@
+:root{
+  --primary:black;
+}
+
 *{
   padding: 0;
+  list-style: none;
   margin: 00;
   box-sizing: border-box;
+  color: 111;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+body{
+  background-color: white;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width:360px) {
+  html{
+    font-size: 10px;
+  }
+  
+}
+

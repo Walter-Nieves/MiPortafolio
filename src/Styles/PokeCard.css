@@ -1,0 +1,29 @@
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img {
+    width: 120%;
+}
+
+.strong {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.strong1 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 60px;
+
+}

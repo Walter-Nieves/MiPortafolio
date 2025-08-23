@@ -1,0 +1,73 @@
+.training {
+    display: flex;
+    width: 100%;
+    max-width: 57rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    position: relative;
+    z-index: 0;
+   
+    /* background-color: yellow; */
+}
+.training h2{
+    font-size: 2.5rem;
+}
+.training .btn-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    position: absolute;
+    height: 100%;
+    align-items: center;
+    z-index: -1;
+}
+
+.training .btn-container button {
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(26, 25, 25, 0.284);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    transition: background-color .3s ease;
+    color: black;
+}
+
+.training .btn-container button:hover {
+    background-color: rgba(8, 8, 8, 0.4);
+}
+
+.training .slider-container {
+    width: calc(100% - 6rem);
+    overflow: hidden;
+    mask: linear-gradient(to right, transparent, white, white, white, transparent);
+    
+    /* background-color: blue;
+    padding: 5px; */
+}
+
+.training .mov-container {
+    display: flex;
+    position: relative;
+    transition: transform 1s ease;
+   
+    /* background-color: red; */
+}
+@media screen and (max-width:780px) {
+    .training{
+        max-width: 33rem;
+    }
+}
+@media screen and (max-width:470px) {
+    .training{
+        max-width: 22rem;
+     
+    }
+}

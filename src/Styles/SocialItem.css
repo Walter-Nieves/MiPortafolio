@@ -1,0 +1,17 @@
+.SocialItem {
+    display: flex;
+    width: 1rem;
+
+}
+
+.SocialItem a {
+    display: flex;
+    width: 100%;
+}
+
+.SocialItem img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    filter: invert(-1);
+}

@@ -1,0 +1,72 @@
+.centrar {
+    width: 100vw;
+    height: 100vh;
+    /* max-height: 800px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 30px; */
+    background-image: url(https://cdn.media.amplience.net/i/frasersdev/98786390_o?fmt=auto&upscale=false&w=767&h=767&sm=scaleFit&$h-ttl$);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+   
+    
+
+}
+
+.h2 {
+    font-size: 100px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 2px white;
+    color: rgb(235, 235, 12);
+    padding: 0px 25px;
+    border-radius: 10px;
+    margin-bottom: 170px;
+
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.span {
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.input {
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px white;
+    padding: 10px;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px white;
+
+
+}
+
+.boton:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 1px 1px 2px;
+}

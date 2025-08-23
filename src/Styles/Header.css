@@ -1,0 +1,178 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
+  
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  
+}
+
+.header nav .ul {
+  display: flex;
+  cursor: pointer;
+ 
+
+}
+
+.header .Menu {
+  display: none;
+   
+}
+
+.header .Menu:hover {
+  background-color: rgba(128, 128, 128, 0.089);
+  border-radius: 0.5rem;
+  
+}
+
+.header .idioma {
+  position: relative;
+  cursor: pointer;
+}
+
+.header .idioma .btn-idioma {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.1rem;
+  margin-bottom: -0.5rem;
+  background-color: var(--primary);
+  transition: 0.5s;
+  width: 4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.header .idioma .btn-idioma .li-1 {
+  position: absolute;
+  display: none;
+  color: black;
+  width: 4rem;
+
+}
+.header .idioma .btn-idioma .li-2 {
+  position: absolute;
+  display: none;
+  color: black;
+  width: 4rem;
+  
+}
+
+.header .idioma .btn-idioma:hover .li-1 {
+  display: flex;
+  justify-content: center;
+  bottom: -1.43rem;
+  left: 0;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.1rem;
+  background-color: var(--primary);
+  transition: 0.5s;
+    outline:1px solid white;
+}
+.header .idioma .btn-idioma:hover .li-1:hover {
+  color: white;
+  background-color: black;
+}
+
+.header .idioma .btn-idioma:hover .li-2 {
+  justify-content: center;
+  display: flex;
+  bottom: -2.99rem;
+  left: 0;
+  border-radius: 0.3rem;
+  padding: 0.15rem 0.1rem;
+  background-color: var(--primary);
+  transition: 0.5s;
+  width: 4rem;
+  outline:1px solid white;
+}
+
+.header .idioma .btn-idioma:hover .li-2:hover {
+  color: white;
+  background-color: black;
+}
+
+.header .idioma .btn-idioma:hover {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+
+/* .header .btn-idioma {
+  display: flex;
+} */
+
+.header a {
+  display: flex;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: black;
+}
+
+.header a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+  background-color: rgba(128, 128, 128, 0.089);
+}
+
+.header img {
+  width: 3rem;
+  aspect-ratio: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .header .hamburguesa-nav {
+    position: relative;
+  }
+
+  .ul {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+  }
+
+  .header nav {
+    right: -3rem;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    font-weight: bolder;
+    z-index: 1;
+
+  }
+
+  .header nav.abierto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .hamburguesa-nav .Menu {
+    display: flex;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+
+  /* .header .hamburguesa-nav:hover nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+   
+  } */
+
+  .header .idioma .btn-idioma {
+    bottom: -1.2rem;
+    cursor: pointer;
+  }
+}
