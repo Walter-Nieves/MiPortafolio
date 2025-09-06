@@ -5,8 +5,9 @@ import { AnimationContext } from "../Contexts/AnimationContexts.jsx";
 // import { datos } from "../datos.js";
 import SocialItem from "./SocialItem.jsx";
 import { LanguageContext } from "../Contexts/LanguageContexts.jsx";
-import logowna from "/MiPortafolio/imagenes/wna11.webp"
-import hamburguesa from "/MiPortafolio/imagenes/hamburguesa.svg"
+import logowna from "/imagenes/wna11.webp"
+import hamburguesa from "/imagenes/hamburguesa.svg"
+
 
 function Header() {
   const navegarA = useNavigate();
@@ -69,6 +70,7 @@ function Header() {
                 </SocialItem>
               );
             })}
+         
 
             {/* <li  >
                         <a href="#" onClick={(e) => navigateHandler(e, "/")}>Inicio</a>

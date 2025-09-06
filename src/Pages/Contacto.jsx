@@ -2,32 +2,29 @@
 import "/src/Styles/Contacto.css";
 import { useForm } from "react-hook-form";
 // import { useState } from "react";
-import { LanguageContext } from '../Contexts/LanguageContexts.jsx';
+import { LanguageContext } from "../Contexts/LanguageContexts.jsx";
 import { useContext } from "react";
-
-
-
 
 function Contacto() {
   // const navegarA = useNavigate();
-  const { contenido} = useContext(LanguageContext);
+  const { contenido } = useContext(LanguageContext);
   // const [rutaCorreo, setRutaCorreo] = useState("");
 
   // const enviarCorreo = (nombre, correo, asunto, mensaje) => {
-    // mailto:micorreo@gmail.com?subject=Asunto&body=Cuerpo
+  // mailto:micorreo@gmail.com?subject=Asunto&body=Cuerpo
 
-    // let url = "";
-    // url += "mailto:";
-    // url += correo;
-    // url += "?subject=";
-    // url += asunto;
-    // url += "&body=";
-    // url += mensaje;
-    // url += ` Hola ${nombre}! hemos recibido tu correo pronto nos comunicaremos contigo, muchas gracias`;
+  // let url = "";
+  // url += "mailto:";
+  // url += correo;
+  // url += "?subject=";
+  // url += asunto;
+  // url += "&body=";
+  // url += mensaje;
+  // url += ` Hola ${nombre}! hemos recibido tu correo pronto nos comunicaremos contigo, muchas gracias`;
 
-    // url = url.replaceAll(" ","%20");
+  // url = url.replaceAll(" ","%20");
 
-    //se usa %20 en la url para reemplazar todos los espacion vacios por ejemplo "buenas tardes" es "buenas%20tardes"
+  //se usa %20 en la url para reemplazar todos los espacion vacios por ejemplo "buenas tardes" es "buenas%20tardes"
   //   window.location.href = url;
 
   // };
@@ -35,47 +32,75 @@ function Contacto() {
     handleSubmit,
     register,
     formState: { errors },
-    getValues,
-    setValue,
+    // getValues,
+    // setValue,
   } = useForm();
 
-  const manejadorSubmit = handleSubmit(async(datos) => {
+  const manejadorSubmit = handleSubmit(async (datos) => {
     console.log(datos);
     try {
-      const response = await fetch("http://localhost:3000/api/send",
-        {
-          method:"POST",
-          headers:{
-            "Content-type":"application/json"
-          },
-          body:JSON.stringify(datos)
-        }
-      ) ;
+      const response = await fetch("http://localhost:3000/api/send", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(datos),
+      });
 
       const data = await response.json();
       alert(data.message);
-      
     } catch (error) {
       alert(error.message);
     }
     // enviarCorreo(datos.nombre,datos.correo,datos.asunto,datos.mensaje);
   });
 
-  const filtrarNumeros = (cual) => {
-    let valores = "";
-    valores = getValues(cual);
-    //vas a reemplazar todos los numeros por nada
-    setValue(cual, valores.replace(/[0-9]/g, ""));
-    // console.log(refInput.current.value)
-    // refInput.current.value = refInput.current.value.replace(/[0-9]/g,"");
+  const validarCorreo = (campo) => {
+    const valor = String(campo ?? "").trim();
+
+    if (!valor) return contenido.contacto.errores.requerido;
+
+    // 1. Debe tener exactamente un "@"
+    const partes = valor.split("@");
+    if (partes.length !== 2) return contenido.contacto.errores.notAllowed14;
+
+    const [local, dominio] = partes;
+
+    // 2. Local-part (antes del @)
+    if (/[^a-zA-Z0-9._-]+$/.test(local)) {
+      return contenido.contacto.errores.notAllowed15;
+    }
+    if (local.startsWith(".") || local.endsWith(".")) {
+      return contenido.contacto.errores.notAllowed16;
+    }
+
+    if (/[<>]/.test(valor)) {
+      return contenido.contacto.errores.notAllowed1;
+    }
+
+    // 3. Dominio
+    if (!/^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(dominio)) {
+      return contenido.contacto.errores.notAllowed17;
+    }
+
+    return true; //válido
   };
 
-  const filtrarletras = (cual) => {
-    let valores = "";
-    valores = getValues(cual);
-    //vas a reemplazar todo lo que no sea letra por nada,se añade la Ñ pq sino no sale
-    setValue(cual, valores.replace(/[^a-zA-ZñÑ]/g, ""));
-  };
+  // const filtrarNumeros = (cual) => {
+  //   let valores = "";
+  //   valores = getValues(cual);
+  //   //vas a reemplazar todos los numeros por nada
+  //   setValue(cual, valores.replace(/[0-9]/g, ""));
+  //   // console.log(refInput.current.value)
+  //   // refInput.current.value = refInput.current.value.replace(/[0-9]/g,"");
+  // };
+
+  // const filtrarletras = (cual) => {
+  //   let valores = "";
+  //   valores = getValues(cual);
+  //   //vas a reemplazar todo lo que no sea letra por nada,se añade la Ñ pq sino no sale
+  //   setValue(cual, valores.replace(/[^a-zA-ZñÑ]/g, ""));
+  // };
 
   return (
     <div className="uno">
@@ -87,7 +112,7 @@ function Contacto() {
             className={errors.nombre ? "input-error" : ""}
             type="text"
             placeholder={contenido.contacto.nombre}
-            onChange={filtrarNumeros}
+            // onChange={filtrarNumeros}
             {...register("nombre", {
               required: {
                 value: true,
@@ -95,13 +120,36 @@ function Contacto() {
               },
               minLength: {
                 value: 2,
-                message: contenido.contacto.errores.minimo,
+                message: contenido.contacto.errores.minimo2,
               },
               maxLength: {
-                value: 20,
-                message: contenido.contacto.errores.maximo,
+                value: 40,
+                message: contenido.contacto.errores.maximo2,
               },
-              onChange: () => filtrarletras("nombre"),
+              validate: (valor) => {
+                if (/[<>]/.test(valor)) {
+                  return contenido.contacto.errores.notAllowed1;
+                }
+
+                if (/\d/.test(valor)) {
+                  return contenido.contacto.errores.notAllowed2;
+                }
+
+                // if (/[a-zA-ZáéíóúÁÉÍÓÚñÑ]/.test(valor)) {
+                //   return "No se permiten letras";
+                // }
+
+                if (/[^0-9a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/.test(valor)) {
+                  return contenido.contacto.errores.notAllowed3;
+                }
+
+                if (/ {2,}/.test(valor)) {
+                  return contenido.contacto.errores.notAllowed4;
+                }
+
+                return true;
+              },
+              // onChange: () => filtrarletras("nombre"),
             })}
           />
 
@@ -122,15 +170,21 @@ function Contacto() {
                 value: true,
                 message: contenido.contacto.errores.requerido,
               },
-              validate: (valor) => {
-                //esta linea es para como debe ir la composicion del correo / {2,} significa que al menos debe llevar dos letras ejemplo .es
-                const evaluacion =
-                  /[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/.test(valor);
-
-                if (!evaluacion) {
-                  return contenido.contacto.errores.invalidoCorreo;
-                }
+              validate: (campo) => {
+                // Aquí llamas tu función validarCorreo paso a paso
+                const resultado = validarCorreo(campo);
+                return resultado === true ? true : resultado;
               },
+
+              // validate: (valor) => {
+              //   //esta linea es para como debe ir la composicion del correo / {2,} significa que al menos debe llevar dos letras ejemplo .es
+              //   const evaluacion =
+              //     /[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/.test(valor);
+
+              //   if (!evaluacion) {
+              //     return contenido.contacto.errores.invalidoCorreo;
+              //   }
+              // },
             })}
           />
 
@@ -148,12 +202,35 @@ function Contacto() {
                 message: contenido.contacto.errores.requerido,
               },
               minLength: {
-                value: 2,
-                message: contenido.contacto.errores.minimo2,
+                value: 5,
+                message: contenido.contacto.errores.minimo,
               },
               maxLength: {
                 value: 40,
                 message: contenido.contacto.errores.maximo2,
+              },
+              validate: (valor) => {
+                if (/[<>]/.test(valor)) {
+                  return contenido.contacto.errores.notAllowed1;
+                }
+
+                // if (/\d/.test(valor)) {
+                //   return "No se permiten números";
+                // }
+
+                // if (/[a-zA-ZáéíóúÁÉÍÓÚñÑ]/.test(valor)) {
+                //   return "No se permiten letras";
+                // }
+
+                // if (/[^0-9a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/.test(valor)) {
+                //   return "No se permiten caracteres especiales";
+                // }
+
+                if (/ {2,}/.test(valor)) {
+                  return contenido.contacto.errores.notAllowed4;
+                }
+
+                return true;
               },
             })}
           />
@@ -198,12 +275,35 @@ function Contacto() {
                 message: contenido.contacto.errores.requerido,
               },
               minLength: {
-                value: 2,
-                message: contenido.contacto.errores.minimo2,
+                value: 5,
+                message: contenido.contacto.errores.minimo,
               },
               maxLength: {
                 value: 400,
                 message: contenido.contacto.errores.maximo3,
+              },
+              validate: (valor) => {
+                if (/[<>]/.test(valor)) {
+                  return contenido.contacto.errores.notAllowed1;
+                }
+
+                // if (/\d/.test(valor)) {
+                //   return "No se permiten números";
+                // }
+
+                // if (/[a-zA-ZáéíóúÁÉÍÓÚñÑ]/.test(valor)) {
+                //   return "No se permiten letras";
+                // }
+
+                // if (/[^0-9a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/.test(valor)) {
+                //   return "No se permiten caracteres especiales";
+                // }
+
+                if (/ {2,}/.test(valor)) {
+                  return contenido.contacto.errores.notAllowed4;
+                }
+
+                return true;
               },
             })}
           ></textarea>
