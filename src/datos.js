@@ -1,5 +1,3 @@
-
-
 export const datos = {
   lenguaje: {
     boton1: "Lenguaje",
@@ -49,7 +47,7 @@ export const datos = {
     redes: [
       {
         nombre: "LinkedIn",
-        enlace: "httos://www.linkedin.com/in/wnieves/",
+        enlace: "https://www.linkedin.com/in/wnieves/",
         icono: "/MiPortafolio/imagenes/linkedin.svg",
       },
       {
@@ -64,8 +62,112 @@ export const datos = {
       },
     ],
   },
+  cv: {
+    persona: {
+      nombre: "WALTER NIEVES ARRIETA",
+      titulo:
+        "Administrador de Empresa | Desarrollador Web Front-end en formación",
+      telefono: "+57 300 829 2738",
+      email: "nievesarrietawalter@gmail.com",
+      documento: "CC 72.009.692 de Barranquilla",
+    },
+    perfil: [
+      "Profesional con alto sentido de la responsabilidad y el compromiso, distinguido por su exigencia ética, alta capacidad de aprendizaje y amplia experiencia en manejo de grupos de trabajo multidisciplinarios.",
+      "Habituado a trabajar en ambientes de alto rendimiento y comprometido siempre con el éxito de los proyectos.",
+      "Capaz de lograr objetivos mediante el uso efectivo de los recursos y la armonización de los talentos de los equipos de trabajo. Experiencia en manejo de situaciones difíciles y toma de decisiones bajo presión.",
+      "Actualmente en transición hacia el sector tecnológico como Desarrollador Web Front-end y Back-end. Formación práctica con React, Tailwind CSS, Node.js, Express y MongoDB, con objetivo de evolucionar a Next.js y perfil Full Stack. Experiencia en banca aporta base sólida en análisis, orientación al cliente, trabajo en equipo y gestión de datos.",
+    ],
+    experiencia: [
+      {
+        empresa: "BANCO CAJA SOCIAL",
+        cargo: "Asesor Integral",
+        desde: "Enero 2010",
+        hasta: "Mayo 2024",
+        tareas: [
+          "Vinculación de clientes mediante productos de ahorro y crédito, seguros y títulos de capitalización.",
+          "Mantenimiento y fidelización de clientes con herramientas de la entidad.",
+          "Gestión de PQRs por correo, línea telefónica y presencial.",
+          "Manejo confidencial de bases de datos de clientes.",
+          "Ventas presenciales y telefónicas para metas mensuales.",
+          "Procesos de atención al cliente garantizando metas comerciales.",
+          "Uso de marca y material promocional para generar confianza.",
+          "Manejo seguro y confidencial de información física y digital.",
+        ],
+      },
+      {
+        empresa: "BANCO CAJA SOCIAL",
+        cargo: "Subgerente encargado (reemplazos)",
+        tareas: [
+          "Aplicación de estrategias de negocio, normas y procedimientos para operaciones seguras.",
+          "Supervisión de personal y aseguramiento de servicio de calidad.",
+          "Autorización de operaciones y transacciones con control de riesgos.",
+          "Reemplazo del Gerente para garantizar el funcionamiento integral.",
+          "Atención y solución de requerimientos en primera instancia.",
+        ],
+      },
+      {
+        empresa: "BANCO AV VILLAS",
+        cargo: "Asesor Comercial",
+        desde: "Agosto 2006",
+        hasta: "Noviembre 2009",
+        tareas: [
+          "Vinculación de clientes mediante productos de ahorro y crédito.",
+          "Mantenimiento y fidelización de clientes.",
+          "Manejo confidencial de bases de datos para ampliar portafolio.",
+          "Ventas presenciales y telefónicas para metas mensuales.",
+          "Atención al cliente para cumplimiento de metas comerciales.",
+          "Manejo seguro y confidencial de información física y digital.",
+        ],
+      },
+    ],
+    educacion: [
+      {
+        institucion: "UNAD",
+        nivel: "Universitario",
+        titulo: "Administrador de Empresas",
+      },
+      {
+        institucion: "Cajacopi",
+        nivel: "Técnico",
+        titulo: "Administrador de Sistemas",
+      },
+      {
+        institucion: "Instituto Meyer",
+        nivel: "Intermedio",
+        titulo: "Inglés básico conversacional",
+      },
+      {
+        institucion: "Centro de Idiomas Berlitz",
+        nivel: "Intermedio",
+        titulo: "Inglés básico conversacional",
+      },
+      {
+        institucion: "Steam Academy",
+        nivel: "Técnico",
+        titulo: "Desarrollador Web Front-end",
+      },
+      {
+        institucion: "Steam Academy",
+        nivel: "Técnico",
+        titulo: "Desarrollador Web Back-end",
+      },
+    ],
+    formacionActual: [
+      "React y React Router para aplicaciones dinámicas.",
+      "Tailwind CSS para interfaces modernas y responsivas.",
+      "Node.js, Express y MongoDB para construcción de APIs.",
+      "Proyectos personales con autenticación, CRUDs y despliegue.",
+      "Enfoque en Next.js y perfil Full Stack.",
+    ],
+    proyectos: [
+      "Portafolio personal (React + Vite): sitio con navegación dinámica y despliegue en GitHub Pages.",
+      "Clon Trello: gestión de tareas con autenticación y CRUD de tableros.",
+      "API de gestión de usuarios (Node.js + MongoDB): endpoints REST con validaciones y seguridad básica.",
+      "Prácticas con Next.js: integrar SSR y full stack en proyectos futuros.",
+    ],
+  },
   acerca: {
-    nombre:"Walter Nieves",
+    nombre: "Walter Nieves",
     titulo: "Sobre mí",
     foto: "/MiPortafolio/imagenes/recap.gif",
     parrafos: [
@@ -189,8 +291,10 @@ export const datos = {
         descripcion:
           "Juego sencillo de adivinar un numero al azar entre 1 y 100",
         foto: "/MiPortafolio/imagenes/numerosecreto.webp",
-        demonstracion: "https://walter-nieves.github.io/Encontrar-numero-secreto/",
-        repositorio: "https://github.com/Walter-Nieves/Encontrar-numero-secreto",
+        demonstracion:
+          "https://walter-nieves.github.io/Encontrar-numero-secreto/",
+        repositorio:
+          "https://github.com/Walter-Nieves/Encontrar-numero-secreto",
       },
       {
         nombre: "Juego del ahorcado",
@@ -205,16 +309,16 @@ export const datos = {
         descripcion:
           "Aplicativo full stack para modificar tareas. Guardando la informacion en MongoDB",
         foto: "/MiPortafolio/imagenes/Tasklist.PNG",
-        demonstracion:"https://walter-nieves.github.io/Tasklist-front/" ,
-        repositorio:"https://github.com/Walter-Nieves/Tasklist-front",
+        demonstracion: "https://walter-nieves.github.io/Tasklist-front/",
+        repositorio: "https://github.com/Walter-Nieves/Tasklist-front",
       },
       {
         nombre: "React-Landing",
         descripcion:
           "Sitio Web de una empresa de ecoturismo en Colombia.Todo con componentes dinamicos",
         foto: "/MiPortafolio/imagenes/Viaja Colombia.PNG",
-        demonstracion:"https://walter-nieves.github.io/React-Landing/" ,
-        repositorio:"https://github.com/Walter-Nieves/React-Landing",
+        demonstracion: "https://walter-nieves.github.io/React-Landing/",
+        repositorio: "https://github.com/Walter-Nieves/React-Landing",
       },
       {
         nombre: "Mi portafolio",
@@ -243,14 +347,16 @@ export const datos = {
       maximo2: "Debes tener máximo 40 caracteres",
       maximo3: "Debes tener máximo 400 caracteres",
       invalidoCorreo: "El correo ingresado no es válido",
-      notAllowed1:"No se permiten < ni >",
-      notAllowed2:"No se permiten números",
-      notAllowed3:"No se permiten caracteres especiales",
-      notAllowed4:"No se permiten más de un espacio seguido",
-      notAllowed14:"Debe contener exactamente un '@'",
-      notAllowed15:"La parte antes del '@' solo permite letras, números, punto, guion y guion bajo",
-      notAllowed16:"La parte antes del '@' no puede iniciar o terminar con punto",
-      notAllowed17:"El dominio no es válido (ej: ejemplo.com)",
+      notAllowed1: "No se permiten < ni >",
+      notAllowed2: "No se permiten números",
+      notAllowed3: "No se permiten caracteres especiales",
+      notAllowed4: "No se permiten más de un espacio seguido",
+      notAllowed14: "Debe contener exactamente un '@'",
+      notAllowed15:
+        "La parte antes del '@' solo permite letras, números, punto, guion y guion bajo",
+      notAllowed16:
+        "La parte antes del '@' no puede iniciar o terminar con punto",
+      notAllowed17: "El dominio no es válido (ej: ejemplo.com)",
     },
   },
 };
@@ -319,8 +425,111 @@ export const datos2 = {
       },
     ],
   },
+  cv: {
+    persona: {
+      nombre: "WALTER NIEVES ARRIETA",
+      titulo: "Business Administrator | Front-end Web Developer in training",
+      telefono: "+57 300 829 2738",
+      email: "nievesarrietawalter@gmail.com",
+      documento: "CC 72.009.692 from Barranquilla",
+    },
+    perfil: [
+      "Professional with a strong sense of responsibility and commitment, distinguished by ethical standards, high learning capacity, and extensive experience in managing multidisciplinary work teams.",
+      "Accustomed to working in high-performance environments and always committed to the success of projects.",
+      "Capable of achieving objectives through effective use of resources and harmonization of team talents. Experienced in handling difficult situations and making decisions under pressure.",
+      "Currently transitioning into the technology sector as a Front-end and Back-end Web Developer. Hands-on training with React, Tailwind CSS, Node.js, Express, and MongoDB, aiming to evolve towards Next.js and Full Stack profile. Banking experience provides a solid foundation in analysis, customer orientation, teamwork, and data management.",
+    ],
+    experiencia: [
+      {
+        empresa: "BANCO CAJA SOCIAL",
+        cargo: "Comprehensive Advisor",
+        desde: "January 2010",
+        hasta: "May 2024",
+        tareas: [
+          "Customer acquisition through savings and credit products, insurance, and capitalization titles.",
+          "Customer retention and loyalty using the institution’s tools.",
+          "Handling of PQRs (Petitions, Complaints, Claims) via email, phone, and in-person.",
+          "Confidential management of customer databases.",
+          "In-person and phone sales to achieve monthly targets.",
+          "Customer service processes ensuring commercial goals.",
+          "Use of brand and promotional materials to generate trust.",
+          "Safe and confidential handling of physical and digital information.",
+        ],
+      },
+      {
+        empresa: "BANCO CAJA SOCIAL",
+        cargo: "Deputy Manager (acting/replacements)",
+        tareas: [
+          "Implementation of business strategies, rules, and procedures for secure operations.",
+          "Supervision of staff and ensuring quality service.",
+          "Authorization of operations and transactions with risk control.",
+          "Acting as Manager replacement to ensure full branch operation.",
+          "First-line response and resolution of customer requirements.",
+        ],
+      },
+      {
+        empresa: "BANCO AV VILLAS",
+        cargo: "Commercial Advisor",
+        desde: "August 2006",
+        hasta: "November 2009",
+        tareas: [
+          "Customer acquisition through savings and credit products.",
+          "Customer retention and loyalty management.",
+          "Confidential handling of databases to expand portfolio.",
+          "In-person and phone sales to achieve monthly targets.",
+          "Customer service for commercial goal fulfillment.",
+          "Safe and confidential handling of physical and digital information.",
+        ],
+      },
+    ],
+    educacion: [
+      {
+        institucion: "UNAD",
+        nivel: "University",
+        titulo: "Business Administration",
+      },
+      {
+        institucion: "Cajacopi",
+        nivel: "Technical",
+        titulo: "Systems Administration",
+      },
+      {
+        institucion: "Instituto Meyer",
+        nivel: "Intermediate",
+        titulo: "Basic conversational English",
+      },
+      {
+        institucion: "Centro de Idiomas Berlitz",
+        nivel: "Intermediate",
+        titulo: "Basic conversational English",
+      },
+      {
+        institucion: "Steam Academy",
+        nivel: "Technical",
+        titulo: "Front-end Web Developer",
+      },
+      {
+        institucion: "Steam Academy",
+        nivel: "Technical",
+        titulo: "Back-end Web Developer",
+      },
+    ],
+    formacionActual: [
+      "React and React Router for dynamic applications.",
+      "Tailwind CSS for modern and responsive interfaces.",
+      "Node.js, Express, and MongoDB for API development.",
+      "Personal projects with authentication, CRUDs, and deployment.",
+      "Focus on Next.js and Full Stack profile.",
+    ],
+    proyectos: [
+      "Personal portfolio (React + Vite): site with dynamic navigation and deployment on GitHub Pages.",
+      "Trello Clone: task management with authentication and board CRUD.",
+      "User management API (Node.js + MongoDB): REST endpoints with validations and basic security.",
+      "Practice with Next.js: integrating SSR and full stack in future projects.",
+    ],
+  },
   acerca: {
-     nombre:"Walter Nieves",
+    nombre: "Walter Nieves",
     titulo: "About me",
     foto: "/MiPortafolio/imagenes/recap.gif",
     parrafos: [
@@ -420,7 +629,7 @@ export const datos2 = {
         descripcion:
           "Project where we have programming logic and some animation effects.",
         foto: "/MiPortafolio/imagenes/trello.webp",
-         demonstracion: "https://walter-nieves.github.io/Proyecto-Trello/",
+        demonstracion: "https://walter-nieves.github.io/Proyecto-Trello/",
         repositorio: "https://github.com/Walter-Nieves/Proyecto-Trello",
       },
       {
@@ -428,7 +637,7 @@ export const datos2 = {
         descripcion:
           "The idea is to practice some animation effects in CSS and logic with JavaScript.",
         foto: "/MiPortafolio/imagenes/bebidas.webp",
-         demonstracion: "https://walter-nieves.github.io/Bebidas-refrescantes/",
+        demonstracion: "https://walter-nieves.github.io/Bebidas-refrescantes/",
         repositorio: "https://github.com/Walter-Nieves/Bebidas-refrescantes",
       },
       {
@@ -443,8 +652,10 @@ export const datos2 = {
         nombre: "Secret number",
         descripcion: "Simple game to guess a random number between 1 and 100",
         foto: "/MiPortafolio/imagenes/numerosecreto.webp",
-        demonstracion: "https://walter-nieves.github.io/Encontrar-numero-secreto/",
-        repositorio: "https://github.com/Walter-Nieves/Encontrar-numero-secreto",
+        demonstracion:
+          "https://walter-nieves.github.io/Encontrar-numero-secreto/",
+        repositorio:
+          "https://github.com/Walter-Nieves/Encontrar-numero-secreto",
       },
       {
         nombre: "Hangman game",
@@ -458,16 +669,16 @@ export const datos2 = {
         descripcion:
           "Full stack application to manage tasks, storing the information in MongoDB",
         foto: "/MiPortafolio/imagenes/Tasklist.PNG",
-        demonstracion:"https://walter-nieves.github.io/Tasklist-front/" ,
-        repositorio:"https://github.com/Walter-Nieves/Tasklist-front",
+        demonstracion: "https://walter-nieves.github.io/Tasklist-front/",
+        repositorio: "https://github.com/Walter-Nieves/Tasklist-front",
       },
       {
         nombre: "React-Landing",
         descripcion:
-         "Website of an ecotourism company in Colombia. Built entirely with dynamic components",
+          "Website of an ecotourism company in Colombia. Built entirely with dynamic components",
         foto: "/MiPortafolio/imagenes/Viaja Colombia.PNG",
-        demonstracion:"https://walter-nieves.github.io/React-Landing/" ,
-        repositorio:"https://github.com/Walter-Nieves/React-Landing",
+        demonstracion: "https://walter-nieves.github.io/React-Landing/",
+        repositorio: "https://github.com/Walter-Nieves/React-Landing",
       },
       {
         nombre: "My portfolio",
@@ -500,7 +711,8 @@ export const datos2 = {
       notAllowed3: "Special characters are not allowed",
       notAllowed4: "More than one consecutive space is not allowed",
       notAllowed14: "Must contain exactly one '@'",
-      notAllowed15: "The part before '@' only allows letters, numbers, dot, hyphen, and underscore",
+      notAllowed15:
+        "The part before '@' only allows letters, numbers, dot, hyphen, and underscore",
       notAllowed16: "The part before '@' cannot start or end with a dot",
       notAllowed17: "The domain is not valid (e.g., example.com)",
     },

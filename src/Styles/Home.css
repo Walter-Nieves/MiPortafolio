@@ -92,7 +92,11 @@
     background-color: transparent;
 }
 
-.info button:nth-child(even) {
+/* .info button:nth-child(even) {
+    background-color: var(--primary);
+} */
+
+.info a button{
     background-color: var(--primary);
 }
 
